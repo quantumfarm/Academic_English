@@ -1,0 +1,167 @@
+\documentclass[a4paper]{article}
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+\def\mathbi#1{\textbf{\em #1}}
+\UseRawInputEncoding
+\usepackage{amsmath} % using math package
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+%define new command
+\newcommand{\pd}{\partial}
+
+
+\newcommand{\ket}[1]{\big|  #1 \big \rangle }
+\newcommand{\bra}[1]{ \big\langle #1 \big | }
+
+\newcommand {\avg}[3] {\langle {#1} |{ #2} |{#3} \rangle} 
+
+
+\begin{document}
+\bibliographystyle{plain}
+\title{  Stern-Galach experiment and Dirac's bra-ket notation }
+\author{Yunchan Cui\\\emph{Physics Department,Yunnan University}\\\emph{939830878@qq.com}}
+\date{24 Nov, 2018}
+\maketitle
+
+\begin{abstract}
+Quantum mechanics is a theory that studies the laws of microscopic particle motion and is one of the theoretical foundations of modern physics.Stern-Gerlach experiment lead us to consider a complex vector space.The Stern-Galach experiment is an important physics experiment.It lead us to consider a complex vector space.And the Dirac's bra-ket notation is an important tool for us to study it.
+\end{abstract}
+
+\section{Introduction}
+    In 1913, Bohr proposed the Bohr model of atomic structure witch explained different physical phenomena such as hydrogen atom spectrum and X-ray characteristic line.The Stern-Galach experiment was also done to verify the Bohr model, and it was found that the value of the magnetic moment of the silver atom is indeed quantized. As for Dirac, he is the ultimate finisher of quantum mechanics.Compared to the theory of linear vector space, Dirac's method introduces vector space with many advantages, especially from the views of physicists.The Dirac's bra-ket notation he created together with the Hilbert space, forms the formal system of quantum mechanics and is a very important basic concept.In this paper, we discuss Stern-Galach experiment and Dirac's bra-ket notation to help us comprehend quantum mechanics.
+
+\section{The Stern-Galach experiment}
+    The basic idea of the Stern-Galach experiment, as Stern pointed out in a paper submitted to the Journal of Physics on August 26, 1921: ``Whether quantum theory or classical theory, which The correct statement can be proved by a simple experiment, that is, let a beam of atoms pass through a set of non-uniform magnetic fields and observe its deflection trajectory.''
+
+    Experimental device
+    Before doing the Stern-Galach experiment, Stern had done a precise theoretical calculation of the entire device. In the process of theoretically conceiving the expected results, Stern and Gallagher have overcome many technical problems, the most important of which are three points: 1) the magnetic field is uneven in the 0.1am line; 2 ) high temperature difference; 3) high vacuum.
+\cite{Weinert1995Wrong}    
+    The high temperature furnace causes the metal silver to evaporate into a silver atomic beam, which is emitted by the silver atomic beam emission hole, collimated by the collimator, and then enters an uneven magnetic field and is deflected to the concentrating plate by the magnetic field. The rectangular cracks at both ends of the collimator are about 3 cm apart, and the rectangular crack is about 0.03 mm wide and 0.8 mm long. The deflection magnetic field consists of a concave N pole and a convex s pole. The closest distance between the poles is 2 mm, and the whole set is about 12 cm long. The magnetic field strength is about 0.1T and the gradient is 10T/cm. From the dimensions of the various parts of the device, the instrument requirements of the molecular beam device part of the experimental device are very fine, and must be placed in a very small glass vacuum chamber, the size of the vacuum chamber is similar to a pen.
+\cite{Ramsey1988Molecular}
+
+
+\begin{figure}[htbp!] \label{1}
+\centering % put the fig. in the center
+    \includegraphics[width=0.8\linewidth]{1.jpg}
+    \caption{Experimental device of the Stern-Galach experiment}
+\end{figure}
+
+
+
+
+
+    Experimental principle
+    The experimental principle is based on the combination of the classical theory of Larmor's precession and the assumption of the quantum theory of Bohr-Sommerfeld space. The use of an inhomogeneous magnetic field was chosen in the experiment because the resultant force of the silver atoms in a uniform magnetic field is zero. Only in an inhomogeneous magnetic field, the resultant force of the silver atoms is not zero and the direction of the external force is along the z-axis.After the silver atoms are collimated, they enter an inhomogeneous magnetic field. The direction of the magnetic field is z-axis and the direction of the Y-axis is vertical.
+\cite{Sakurai1986Modern}
+
+\begin{equation}
+\frac{\partial\textbf{$B_{\mathbi{z}}$}}{\partial\textbf{$\mathbi{x}$}}=\frac{\partial\textbf{$B_{\mathbi{z}}$}}{\partial\textbf{$\mathbi{y}$}}=0
+\end{equation}
+    Silver atoms are stressed in the z direction
+\begin{equation}
+\textbf{$F_{\mathbi{z}}$}=-\frac{\partial\textbf{$U_{\mathbi{z}}$}}{\partial\textbf{$\mathbi{z}$}}=\textbf{$\mu_{\mathbi{z}}$}
+\cdot\frac{\partial\textbf{$B_{\mathbi{z}}$}}{\partial\textbf{$\mathbi{z}$}}
+\end{equation}
+    Let a bunch of silver atoms pass through a non-uniform magnetic field. If the magnetic moment of a silver atom is in a specific orientation, as can be seen from the foregoing, cos$\theta$ has three values according to Sommerfeld's theory, that is, the silver atom will split into three beams, and according to the glass The theoretical cos$\theta$ has two values, and the silver atom splits into two. Therefore, the silver atom is split into specific stripes in a specific direction of force after being deflected by the magnetic field. The strength of the stripe deflection is related to the magnetic moment of the atom.
+    
+    Experimental result
+    
+    Data analysis of the experimental results shows that the magnetic moment inside the silver atom is actually close to a Bohr magnetic moment, and $\mu_{\mathbi{z}}$ has two values in the z direction.
+\cite{Toennies2011Otto}
+\begin{equation}   
+\textbf{$\mu_{\mathbi{z}}$}=\frac{\textbf{$eh$}}{\textbf{$4{\pi}m{B_{\mathbi{z}}}$}}
+\end{equation}
+
+\begin{figure}[htbp!] \label{2}
+\centering % put the fig. in the center
+    \includegraphics[width=0.8\linewidth]{2.jpg}
+    \caption{Galach's postcard sent to Bohr}
+\end{figure}
+    The relative error is less than 10 percent, which is just in line with Bohr's silver atomic magnetic moment.
+    
+    
+    Spin of the electron
+    
+    In 1925, GE Ullenbeck and SA Guzmitt were inspired by the principle of Pauli's incompatibility. Some experimental results of atomic spectroscopy were analyzed. It is proposed that electrons have intrinsic motion, spin, and are associated with electron spins. Spin magnetic moment. This explains the fine structure of the atomic spectrum and the anomalous Zeeman effect. The spin angular momentum of an electron is shown in the figure, where the electron spin S = 1/2.Stern-Galach experiment's original principle is the spin of electrons.
+    
+    Further research shows that not only electrons exist in spin, but all microscopic particles such as neutrons, protons, and photons have spins, but the range of values is different. Spins, like physical quantities such as static mass and charge, are also physical quantities that describe the intrinsic properties of microscopic particles.
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 
+
+\section{Dirac's bra-ket notation}
+    The Dirac's bra-ket notation, together with the Hilbert space, constitutes a formal system of quantum mechanics and is a very important basic concept. It was proposed by Dirac in 1939. He split the word ``bracket'' into two, representing the left and right parts of the symbol, on the left. ``bra'' is the left arrow; the right is ``ket'', which is the right vector.
+    Dividing the Hilbert space into two, the space of each other, is the advantage of the Dirac's bra-ket notation. The right vector $\mid\alpha\rangle$ is used to represent the state vector, the left vector $\langle\alpha\mid$ is the common vector, $\langle\alpha\mid\beta\rangle$ is the inner product, and $\langle\alpha\mid\alpha\rangle$ is greater than or equal to 0, which is called the square. $\mid\beta\rangle\langle\alpha\mid$ is the outer product.
+\cite{Dirac1939A}
+    
+    Dirac symbols have two advantages in the theory of quantum mechanics: 1. It is not necessary to use specific representations (that is, to deviate from a specific representation) to discuss the problem. 2. The calculation is simple, especially for the representation transformation.
+    
+    The right and left vectors can be represented by N$\times$1 order and 1$\times$N order matrix, respectively:
+\begin{equation}   
+\textbf{$\vert\varphi\rangle$}=
+\left( 
+             \begin{array}{c}
+             \varphi_1\\
+             \varphi_2\\
+             \varphi_3\\
+             \varphi_4\\
+             \vdots\\
+             \varphi_N\\
+             \end{array}
+\right) 
+\end{equation}
+    Next, let's list some of the properties of the Dirac's bra-ket notation.
+
+1.  Given any left vector $\langle\phi\mid$, right vector$\mid\varphi_1\rangle$ and $\mid\varphi_2\rangle$ complex numbers $c_1$ and $c_2$,since the left vector is a linear functional, according to the definition of linear functional addition and scalar multiplication.
+\begin{equation}   
+\textbf{$\langle\phi\vert(c_1\vert\varphi_1\rangle+c_2\vert\varphi_2\rangle)$}=
+\textbf{$c_1\langle\phi\vert\varphi_1\rangle+c_2\langle\phi\vert\varphi_2\rangle$}
+\end{equation}
+
+2.  Given any right vector$\mid\varphi\rangle$, left-hander$\langle\phi_1\mid$, and $\langle\phi_2\mid$, and complex numbers $c_1$ and $c_2$, since right-hand is a linear functional.
+\begin{equation}   
+\textbf{$(c_1\langle\phi_1\vert+c_2\langle\phi_2\vert)\vert\varphi\rangle$}=
+\textbf{$c_1\langle\phi_1\vert\varphi\rangle+c_2\langle\phi_2\vert\varphi\rangle$}
+\end{equation}
+
+3.  Given any right vector$\mid\varphi_1\rangle$ and $\mid\varphi_2\rangle$, there are complex numbers $c_1$ and $c_2$, depending on the nature of the inner product
+\begin{equation}   
+\textbf{$c_1\vert\varphi_1\rangle+c_2\vert\varphi_2\rangle$}
+\end{equation}
+and
+\begin{equation}   
+\textbf{$c_1^*\langle\varphi_1\vert+c_2^*\langle\varphi_2\vert$}
+\end{equation}
+are dual relations.
+
+4.  Given any left vector $\langle\phi\mid$ and right vector$\mid\varphi\rangle$, 
+\begin{equation}   
+\textbf{$\langle\phi\vert\varphi\rangle$}=
+\textbf{$\langle\varphi\vert\phi\rangle^*$}
+\end{equation}
+    The essences of the Dirac's bra-ket notation can be further understood by understanding the nature of the Dirac's bra-ket notation. The Dirac's bra-ket notation is actually the point multiplication of the complex matrix, which helps the further operation of the it.
+
+
+\section{Conclusion}
+    Stern tried to use the Stern-Galach experiment—the introduction of Planck's constant h in classical theory, combining Larmor's theory with Bohr-Sommerfeld's theory—in classical theory and space quantum theory Make a choice between them. The experimental results happen to be exactly the same as the Bohr-Sommerfeld theory. From 1925 to 1927, the concepts of Pauli incompatibility, electron spin, and Lande factor were put forward, and the quantum mechanic system was continuously improved. The truth of the Stern-Galach experiment was revealed. The essence of the Tern-Galach experiment is due to the electron spin. Since then, the concept of angular momentum spatial orientation quantization has replaced the concept of spatial quantization, and quantum theory has taken a new step.
+    Quantum mechanics is not a solution to the Schrödinger equation, because the Schrödinger equation can be written in the general form with the Dirac's bra-ket notation, and then can be transferred to various representations to obtain the expression of the equation in the concrete representation.The Dirac's bra-ket notation restricts us from the direction of the symbolic form to the direction of solving the differential equation, and it is easier to grasp the main points of quantum mechanics.
+
+
+
+\bibliography{Ref}
+
+\end{document}
+
+
+
