@@ -1,0 +1,170 @@
+\documentclass[a4paper]{article}
+
+
+\usepackage{amsmath} % using math package
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+%define new command
+\newcommand{\pd}{\partial}
+
+
+\newcommand{\ket}[1]{\big|  #1 \big \rangle }
+\newcommand{\bra}[1]{ \big\langle #1 \big | }
+
+\newcommand {\avg}[3] {\langle {#1} |{ #2} |{#3} \rangle} 
+
+
+\begin{document}
+\title{SG Experiment with the notion of Ket-Bra Space}
+\author{Hongyi Wu}
+\date{5 Dec, 2018}
+\maketitle
+
+\begin{abstract}
+In this paper, the concept of ket-bra space is introduced to explain the SG experiment.
+\end{abstract}
+
+\section{Introduction}
+Quantum mechanics lead to the revolutionary change in our understanding of microscopic phenomena. In a certain sense, a two-state system of the Stern-Gerlach type is the least classical, most quantum-mechanical system. A solid understanding of problems involving two-state systems will turn out to be rewarding to any serious student of quantum mechanics. But why the result of the experiment about the simple spin 1/2 system can be like this? Defining a ket space and a bra space that are complex conjugates of each other, then the experimental result that is observed obtains its interpretation.
+\section{Methods}
+
+\cite{Stern1922}Firstly, we present a brief discussion of the Stern-Gerlach experiment. 
+Silver (Ag) atoms are heated in an oven. The oven has a small hole through which some of the silver atoms escape. the beam goes through a collimator and is then subjected to an inhomogeneous magnetic field produced by a pair of pole pieces, one of which has a very sharp edge. From the point of view of classical physics, the magnetic moment $\mu$ of the atom is proportional to the electron spin S,
+
+\begin{equation}
+S \propto \mu 
+\end{equation}
+
+If the electron were like a classical spinning object，we would expect all values of $\mu$ to be realized between $|\mu|$ and $-|\mu|$. This would lead us to expect a continuous bundle of beams coming out of the SG apparatus. Instead, what we experimentally observe is that the SG apparatus splits the original silver beam from the oven into two distinct components. Only two possible values of the z-component of S are observed to be possible, S$_z$ up and S$_z$ down，which we call S$_z+$ and S$_z-$. The two possible values of S$z$ are multiples of some fundamental unit of angular momentum, numerically it turns out that $S_{z} = \pm \frac{\hbar}{2}$.
+
+Now consider a sequential Stern-Gerlach experiment. By this we mean that the atomic beam goes through two or more SG apparatuses in sequence. SG$_z$ stands for an apparatus with the inhomogeneous magnetic field in the z-direction, as usual. Let us now consider the following three situations. The first arrangement we put two SG$_z$ apparatus right after the oven, then block the z- path in the first apparatus. This time there is only one beam component coming out of the second apparatus just the S$_z+$ component. The second arrangement first SG apparatus is the same as before but the second one (SG$_x$) has an inhomogeneous magnetic field in the x-direction. We now consider a third step, which most dramatically illustrates the peculiarities of quantum- mechanical systems. This time we add to the arrangement a third apparatus, of the SG$_z$ type. It is observed experimentally that two components emerge from the third apparatus，not one; the emerging beams are seen to have both an S$_z+$ component and an S$_z-$ component. This is a complete surprise because after the atoms emerged from the firstapparatus，we made sure that the S$_z-$ component was completely blocked. How is it possible that the S$_z-$ component which, we thought，we eliminated earlier reappears?
+
+We consider a complex vector space whose dimensionality is specified according to the nature of a physical system under consideration. In Stern-Gerlach-type experiments where the only quantum-mechanical de­gree of freedom is the spin of an atom, the dimensionality is determined by the number of alternative paths the atoms can follow when subjected to a SG apparatus; in the case of the silver atoms, the dimensionality is just two, corresponding to the two possible values S$_z$ can assume. Like the vector space we have been dealing with is a ket space.We postulate that corresponding to every ket $\ket{\alpha}$ there exists a bra, denoted by $\bra{\alpha}$, in this dual, or bra, space. An observable, such as momentum and spin components, can be represented by an operator, such as A, in the vector space in question. Quite generally, an operator acts on a ket from the left. In general， $A \ket{\alpha}$ is not a constant times $\ket{\alpha}$. However, there are particular kets of importance, known as eigenkets of operator A, denoted by
+
+\begin{equation}
+\ket{\alpha'}  , \ket{\alpha''} , \ket{\alpha'''} , ...
+\end{equation}
+
+with the property
+
+\begin{equation}
+A \ket{\alpha'} = a' \ket{\alpha'}  , A \ket{\alpha''} = a'' \ket{\alpha''} , A \ket{\alpha'''} = a''' \ket{\alpha'''} , ...
+\end{equation}
+
+where a’,a’’... are just numbers.
+
+Given a ket which is not a null ket，we can form a normalized ket $\ket{\alpha^{.}}$, where
+
+\begin{equation}
+\ket{\alpha^{.}} = \frac{\ket{\alpha}}{\sqrt{\bra{\alpha} \ket{\alpha}}}
+\end{equation}
+
+The normalized eigenkets of A form a complete orthonormal set. An arbitrary ket in the ket space can be expanded in terms of the eigenkets of A. In other words, the eigenkets of A are to be used as base kets in much the same way as a set of mutually orthogonal unit vectors is used as base vectors in Euclidean space.
+
+Given an arbitrary ket $\ket{\alpha}$ in the ket space spanned by the eigenkets of A, let us attempt to expand it as follows:
+
+\begin{equation}
+\ket{\alpha} = \sum_{a'} c_{a'} \ket{a'}
+\end{equation}
+
+then we have
+
+\begin{equation}
+c_{a'} = \bra{a'} \ket{\alpha}
+\end{equation}
+
+\begin{equation}
+\sum_{a'}\ket{\alpha_i}\bra{\alpha_i} = 1
+\end{equation}
+
+\section{Results}
+
+For the spin $ \dfrac{1}{2} $ systems, the base kets used are $ \ket{S_z;\pm} $, which we denote，for brevity, as $ \ket{\pm} $. The simplest operator in the ket space spanned by $ \ket{\pm} $ is the identity operator, can be written as
+
+\begin{equation}
+1 = \ket{+} \bra{+} + \ket{-} \bra{-}
+\end{equation}
+
+and the S$ _z $ can be write as
+
+\begin{equation}
+S_z = \dfrac{\hbar}{2} (\ket{+} \bra{+} + \ket{-} \bra{-})
+\end{equation}
+
+The eigenket-eigenvalue relation
+
+\begin{equation}
+S_z \ket{\pm} = \pm \dfrac{\hbar}{2} \ket{\pm}
+\end{equation}
+
+We show that the results of sequential Stern-Gerlach experiments，when combined with the postulates of quantum mechanics discussed so far.When the S$ _x+ $ beam is subjected to an apparatus of type SG$ _z $，the beam splits into two components with equal intensities. This means that the probability for the S$ _x+ $ state to be thrown into $\ket{S_z;\pm}$, simply denoted as $\ket{\pm}$，is $ \dfrac{1}{2} $ each, hence，
+
+\begin{equation} 
+|\bra{+} \ket{S_x;+}| = |\bra{-} \ket{S_x;+}| = \dfrac{1}{\sqrt{2}}
+\end{equation}
+
+then we can construct the S$ _x+ $ ket,
+
+\begin{equation}
+\ket{S_x;+} = \dfrac{1}{\sqrt{2}} \ket{+} + \dfrac{1}{\sqrt{2}} e^{i \delta_1} \ket{-}
+\end{equation}
+
+with $ \delta_1 $ real.
+
+The S$ _x- $ ket must be orthogonal to the S$ _x+ $ ket because the S$ _x+ $ alternative and S$ _x- $ alternative are mutually exclusive. 
+
+This orthogonality requirement leads to
+
+\begin{equation}
+\ket{S_x;-} = \dfrac{1}{\sqrt{2}} \ket{+} - \dfrac{1}{\sqrt{2}} e^{i \delta_1} \ket{-}
+\end{equation}
+
+Choose the coefficient of $ \ket{+} $ to be real and positive by convention. We can now construct the operator S$ _x $ as follows:
+
+\begin{align*}
+S_x &= \dfrac{\hbar}{2} [(\ket{S_x;+} \bra{S_x;+})-(\ket{S_x;-} \bra{S_x;-})] \\
+&= \dfrac{\hbar}{2} [e^{-i\delta_1}(\ket{+} \bra{-})+e^{i\delta_1}(\ket{-} \bra{+})]
+\end{align*}
+
+A similar argument with Sx replaced by Sy leads to
+
+\begin{equation}
+\ket{S_y;-} = \dfrac{1}{\sqrt{2}} \ket{+} \pm \dfrac{1}{\sqrt{2}} e^{i \delta_1} \ket{-}
+\end{equation}
+
+\begin{equation}
+S_y = \dfrac{\hbar}{2} [e^{-i\delta_2}(\ket{+} \bra{-})+e^{i\delta_2}(\ket{-} \bra{+})]
+\end{equation}
+
+Suppose we have a beam of spin $ \dfrac{1}{2} $ atoms moving in the z-direction. We can consider a sequential Stern-Gerlach experiment with SG$ _x $ followed by SG$ _y $.The results of such an experiment are completely analogous to the earlier case leading to
+
+\begin{equation}
+| \bra{S_y;\pm} \ket{S_x;\pm} | = | \bra{S_y;\pm} \ket{S_x;-} | = \dfrac{1}{\sqrt{2}}
+\end{equation}
+
+then we obtain
+
+\begin{equation}
+\dfrac{1}{2} | 1 \pm e^{i (\delta_1-\delta_2)} | = \dfrac{1}{2}
+\end{equation}
+
+which is satisfied only if
+
+\begin{equation}
+\delta_2 - \delta_1 = \pm \dfrac{\pi}{2}
+\end{equation}
+
+We thus see that the matrix elements of Sx and Sy cannot all be real. 
+
+
+\section{Conclusion}
+The Stern-Gerlach experiment only consider the spin 1/2 systems. The number of alternatives is nondenumerably infinite, in which case the vector space in question is known as a Hilbert space after D. Hilbert, who studied vector spaces in infinite dimensions. Comprehending the Stern-Gerlach experiment is only learning the rudiments to quantum mechanics.
+
+
+\bibliographystyle{plain}
+\bibliography{SG.Bib}
+
+\end{document}
+
